@@ -1,0 +1,11 @@
+#ul-header li a {
+  color: white;
+}
+
+#ul-header li svg {
+  fill: #9A03FC;
+}
+
+#ul-header li svg:hover {
+  fill: white;
+}
