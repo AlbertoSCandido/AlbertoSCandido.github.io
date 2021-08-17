@@ -10,6 +10,10 @@ const FrontEnd = () => {
           <h1 className="c-tertiary">recipes-app</h1>
           <p className="c-secondary">{'//'} 2021 - Trybe</p>
           <p>Aplicativo para salvar, compartilhar e descobrir receitas feito com react</p>
+          <div className="d-flex">
+            <a>GitHub</a>
+            <a>Site</a>
+          </div>
         </div>
       </div>
       <div className="project-card">
