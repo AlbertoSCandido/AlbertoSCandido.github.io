@@ -14,6 +14,8 @@ const Nav = styled.nav`
 
   .logo {
     padding-left: 15px 0;
+    font-size: 1.75rem;
+    font-weight: 600;
   }
 `;
 

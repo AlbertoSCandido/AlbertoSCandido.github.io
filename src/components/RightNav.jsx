@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Ul = styled.ul`
@@ -23,12 +24,12 @@ const Ul = styled.ul`
   }
 `;
 
-const RightNav = ({open}) => {
+const RightNav = ({open, setOpen}) => {
   return (
     <Ul open={ open } id="ul-header">
-      <li><a href="/">Home</a></li>
-      <li><a href="/projects">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
+      <li><Link to="/" onClick={ () => setOpen(!open) }>Home</Link></li>
+      <li><Link to="/projects" onClick={ () => setOpen(!open) }>Projetos</Link></li>
+      <li><Link to="/contact" onClick={ () => setOpen(!open) }>Contato</Link></li>
       <li className="d-flex g-1">
         <a href="https://www.linkedin.com/in/albertocandido/" target="_blank" rel="noreferrer">
           <svg

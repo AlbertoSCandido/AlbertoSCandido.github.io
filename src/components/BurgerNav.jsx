@@ -5,9 +5,9 @@ import RightNav from './RightNav';
 const StyledDiv = styled.div`
   width: 2rem;
   height: 2rem;
-  position: fixed;
-  top: 15px;
-  right: 20px;
+  // position: fixed;
+  top: 0.75rem;
+  right: 1rem;
   z-index: 20;
   display: none;
 
@@ -51,7 +51,7 @@ const BurgerNav = () => {
         <div />
         <div />
       </StyledDiv>
-      <RightNav open={ open }/>
+      <RightNav open={ open } setOpen={ setOpen }/>
     </>
   )
 }
