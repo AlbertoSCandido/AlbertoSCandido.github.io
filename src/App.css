@@ -11,7 +11,7 @@ body {
   font-size: 1.2rem;
   background: #0e1212;
   color: white;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 .d-flex {
@@ -54,7 +54,15 @@ body {
   justify-content: space-between;
 }
 
-.f-grow-2 {
+.j-c-stretch {
+  justify-content: stretch;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.grow-2 {
   flex-grow: 2;
 }
 
@@ -88,11 +96,8 @@ body {
 }
 
 .btn {
-  background-color: #f67e0c;
   border: none;
   border-radius: 0.3rem;
-  color: white;
-  font-size: 0.9rem;
   padding: 0.5rem;
 }
 
@@ -238,14 +243,26 @@ h2, .h2 {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05) , 0 4px 8px 0 rgba(0, 0, 0, 0.05);
 }
 
-.c-tertiary {
-  color: #D502F2;
+.c-primary {
+  color: white;
 }
 
 .c-secondary {
   color: gray;
 }
 
+.c-tertiary {
+  color: #D502F2;
+}
+
 .unstyled-list {
   list-style: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
