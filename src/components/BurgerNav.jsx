@@ -5,7 +5,6 @@ import RightNav from './RightNav';
 const StyledDiv = styled.div`
   width: 2rem;
   height: 2rem;
-  // position: fixed;
   top: 0.75rem;
   right: 1rem;
   z-index: 20;
@@ -18,7 +17,7 @@ const StyledDiv = styled.div`
   }
 
   div {
-    width: 2rem;
+    width: 2rem;  
     height: 0.25rem;
     background: ${({ open }) => open ? '#9A03FC' : 'white'};
     border-radius: 0.25rem;
@@ -37,7 +36,6 @@ const StyledDiv = styled.div`
     &:nth-child(3) {
       transform: ${({open}) => open ? 'rotate(-45deg)' : 'rotate(0deg)'};
     }
-
   }
 `;
 

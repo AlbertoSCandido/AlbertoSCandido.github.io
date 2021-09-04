@@ -5,7 +5,7 @@ import BackEnd from '../components/BackEnd';
 
 
 const Projects = () => {
-  const [stack, setStack] = React.useState('front-end')
+  const [stack, setStack] = React.useState('front-end');
   return (
     <div id="projects">
       <div className="d-flex w-100 j-c-stretch">
@@ -29,4 +29,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;
