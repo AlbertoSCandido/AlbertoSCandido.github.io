@@ -10,14 +10,14 @@ const Projects = () => {
     <div id="projects">
       <div className="d-flex w-100 j-c-stretch">
         <button
-          className="grow-1"
+          className="grow-1 btn-icon c-tertiary fs-3 link-shadow"
           type="button"
           onClick={ () => setStack('front-end') }
         >
           Front-end
         </button>
         <button
-          className="grow-1"
+          className="grow-1 btn-icon c-tertiary fs-3 link-shadow"
           type="button"
           onClick={ () => setStack('back-end') }
         >
