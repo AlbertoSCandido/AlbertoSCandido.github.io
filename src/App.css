@@ -28,16 +28,16 @@ body {
   flex-direction: column;
 }
 
-.j-c-center {
-  justify-content: center;
-}
-
 .a-i-center {
   align-items: center;
 }
 
 .a-i-stretch {
   align-items: stretch;
+}
+
+.j-c-center {
+  justify-content: center;
 }
 
 .j-c-end {
@@ -224,7 +224,7 @@ h2, .h2 {
   font-size: 2rem;
 }
 
-.h3, h3 {
+.h3 {
   font-size: 1.2rem;
 }
 
@@ -268,4 +268,5 @@ h2, .h2 {
   border-radius: 5px;
   border: 1px solid #9A03FC;
   transition: 0.3s;
+  cursor: pointer;
 }

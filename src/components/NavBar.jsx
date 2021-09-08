@@ -5,7 +5,6 @@ import '../styles/header.css';
 import { useLocation } from 'react-router-dom';
 
 const Nav = styled.nav`
-  // width: 100%;
   height: 50px;
   padding: 0 20px;
   display: flex;
@@ -36,7 +35,7 @@ const NavBar = () => {
     <header id="header">
       <Nav>
         <div className="logo">
-          {logo}
+          {'<'}{logo}{' />'}
         </div>
         <BurgerNav />
       </Nav>

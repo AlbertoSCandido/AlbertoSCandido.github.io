@@ -1,6 +1,7 @@
 #projects {
   width: 100%;
   margin: 0 auto;
+  min-height: 60vh;
 }
 
 .project-card {
@@ -72,10 +73,10 @@
 
 @keyframes loader {
   from {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   to {
-      transform: translateY(-1em);
+    transform: translateY(-1em);
   }
 }
 

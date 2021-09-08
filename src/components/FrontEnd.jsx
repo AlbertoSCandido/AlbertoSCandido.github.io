@@ -61,14 +61,14 @@ const FrontEnd = () => {
           <p className="c-secondary">{'//'} 2021 - Trybe</p>
           <p>Uma lista de tarefas feita usando React e Context API.</p>
           <a
-              href="https://albertoscandido.github.io/to-do-list/"
+              href="https://github.com/albertoscandido/to-do-list"
               target="_blank"
               rel="noreferrer"
             >
               GitHub
             </a>
             <a
-              href="https://github.com/albertoscandido/to-do-list"
+              href="https://albertoscandido.github.io/to-do-list/"
               target="_blank"
               rel="noreferrer"
             >
