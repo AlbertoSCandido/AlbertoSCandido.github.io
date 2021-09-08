@@ -89,8 +89,8 @@ const Contact = () => {
               <a href="https://github.com/albertoscandido" title="GitHub" class="icon"><img src={ gitHub } alt="GitHub" /></a>
               <a href="https://www.linkedin.com/in/albertocandido/" title="LinkedIn" class="icon"><img src={ linkedIn } alt="LinkedIn" /></a>
               <a href="https://www.instagram.com/albertocandido98/" title="Instagram" class="icon"><img src={ instagram } alt="Instagram" /></a>
-              <a href="https://www.instagram.com/albertocandido98/" title="Twitter" class="icon"><img src={ twitter } alt="twitter"/></a>
-              <a href="https://www.instagram.com/albertocandido98/" title="Spotify" class="icon"><img src={ spotify } alt="spotify"/></a>
+              <a href="https://twitter.com/albertocas98" title="Twitter" class="icon"><img src={ twitter } alt="twitter"/></a>
+              <a href="https://open.spotify.com/user/tkfegmfvpa0d6wh8k8br4o8vv?si=7c6307506d854d71" title="Spotify" class="icon"><img src={ spotify } alt="spotify"/></a>
           </div>
       </div>
     </main>
