@@ -1,11 +1,13 @@
 import React from 'react'
-import { send, init } from 'emailjs-com';
 import '../styles/contact.css';
 import instagram from '../img/instagram.svg';
 import gitHub from '../img/gitHub.svg';
 import linkedIn from '../img/linkedIn.svg';
 import twitter from '../img/twitter.svg';
 import spotify from '../img/spotify.svg';
+import { send, init } from 'emailjs-com';
+
+init('user_mdrJJlYqofmzWIFqxmIws');
 
 
 const Contact = () => {
@@ -37,7 +39,7 @@ const Contact = () => {
     }
   
     send(
-      'service_a70vrtw',
+      'alberto_id',
       'template_ou98d82',
       toSend,
       'user_mdrJJlYqofmzWIFqxmIws'
@@ -57,7 +59,8 @@ const Contact = () => {
 
   return (
     <main className="main-contact">
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className="form-contact">
+        <h1 className="title-contact">Entre em contato</h1>
         <input
           type="text"
           name="from_name"
@@ -65,10 +68,12 @@ const Contact = () => {
           value={toSend.from_name}
           onChange={handleChange}
         />
-        <input
+        <textarea
           type="text"
           name="message"
+          rows="6"
           placeholder="Sua Mensagem"
+          maxlength="500"
           value={ toSend.message }
           onChange={ handleChange }
         />
