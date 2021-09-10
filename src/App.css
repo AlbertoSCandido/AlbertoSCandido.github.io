@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  letter-spacing: 0.75px;
 }
 
 body {
@@ -11,6 +12,8 @@ body {
   font-size: 1.2rem;
   background: #0e1212;
   color: white;
+  padding-top: 150px;
+  
 }
 
 .d-flex {
@@ -25,16 +28,16 @@ body {
   flex-direction: column;
 }
 
-.j-c-center {
-  justify-content: center;
-}
-
 .a-i-center {
   align-items: center;
 }
 
 .a-i-stretch {
   align-items: stretch;
+}
+
+.j-c-center {
+  justify-content: center;
 }
 
 .j-c-end {
@@ -53,7 +56,15 @@ body {
   justify-content: space-between;
 }
 
-.f-grow-2 {
+.j-c-stretch {
+  justify-content: stretch;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.grow-2 {
   flex-grow: 2;
 }
 
@@ -87,11 +98,8 @@ body {
 }
 
 .btn {
-  background-color: #f67e0c;
   border: none;
   border-radius: 0.3rem;
-  color: white;
-  font-size: 0.9rem;
   padding: 0.5rem;
 }
 
@@ -99,22 +107,9 @@ body {
   opacity: 0.5;
 }
 
-.btn:active {
-  background: black;
-}
-
 .btn-icon {
   background: transparent;
   border: none;
-}
-
-.back-icon {
-  background: #ff3535;
-  border-radius: 50%;
-  margin: 0.5rem;
-  padding: 0.25rem;
-  position: fixed;
-  width: 26px;
 }
 
 .float-icon {
@@ -192,12 +187,16 @@ body {
   font-size: 1rem;
 }
 
-.fs-4 {
+.fs-3 {
   font-size: 1.5rem;
 }
 
+.fs-4 {
+  font-size: 2rem;
+}
+
 .fs-5 {
-  font-size: 1.4rem;
+  font-size: 3rem;
 }
 
 .w-100 {
@@ -217,7 +216,15 @@ a:hover {
   opacity: 0.8;
 }
 
-.h3, h3 {
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+.h3 {
   font-size: 1.2rem;
 }
 
@@ -229,14 +236,37 @@ a:hover {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05) , 0 4px 8px 0 rgba(0, 0, 0, 0.05);
 }
 
-.c-tertiary {
-  color: #D502F2;
+.c-primary {
+  color: white;
 }
 
 .c-secondary {
   color: gray;
 }
 
+.c-tertiary {
+  color: #9A03FC;
+}
+
 .unstyled-list {
   list-style: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.link-shadow {
+  margin: 5px;
+  padding: 20px 5px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #9A03FC;
+  transition: 0.3s;
+  cursor: pointer;
 }
