@@ -2,7 +2,6 @@ import React from 'react'
 import recipeAppLogo from '../img/recipe-app-logo.jpg';
 import pixelArtLogo from '../img/pixel-art-logo.png';
 import imageArtLogo from '../img/to-do-list-logo.jpeg';
-import { Link } from 'react-router-dom';
 
 const FrontEnd = () => {
   return (
@@ -79,10 +78,6 @@ const FrontEnd = () => {
             </a>
         </div>
       </div>
-      <footer className="footer-home p-2 fs-3 link-shadow">
-        <h3>Quer trabalhar junto ou tem alguma dúvida?</h3>
-        <Link to="/contact" className="c-tertiary">DIGA OI 👋🏻</Link>
-      </footer>
     </>
   )
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import FrontEnd from '../components/FrontEnd';
 import BackEnd from '../components/BackEnd';
-import '../styles/projects.css'
+import '../styles/projects.css';
+import {  Link } from 'react-router-dom';
 
 const Projects = () => {
   const [stack, setStack] = React.useState('front-end');
@@ -26,6 +27,10 @@ const Projects = () => {
         </div>
         { stack === 'front-end' ? <FrontEnd /> : <BackEnd /> }
       </section>
+      <footer className="footer-home p-2 fs-3 link-shadow">
+        <h3>Quer trabalhar junto ou tem alguma dúvida?</h3>
+        <Link to="/contact" className="c-tertiary">DIGA OI 👋🏻</Link>
+      </footer>
     </main>
   )
 }

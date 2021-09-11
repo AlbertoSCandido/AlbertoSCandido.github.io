@@ -24,7 +24,6 @@ const Contact = () => {
     init("user_mdrJJlYqofmzWIFqxmIws");
     e.preventDefault();
 
-    console.log('entrei');
     if (toSend.from_name.trim() === '') {
       alert('Please enter your name');
       return;
