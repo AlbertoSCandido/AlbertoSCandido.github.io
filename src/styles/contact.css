@@ -28,10 +28,17 @@
 
 .form-contact button {
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid #9A03FC;
+  font-size: 1.5rem;
   width: 30%;
+  color: #9A03FC;
   border-radius: 4px;
-  background-color: #ccc;
+  background-color: transparent;
+}
+
+.form-contact button:hover {
+  background-color: #9A03FC;
+  color: #fff;
 }
 
 .form-contact h1 {
@@ -92,18 +99,27 @@
 
 @media (max-width: 768px) {
 
+  .socialicons {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
   .socialicons .icon{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     box-shadow: 0 0 5px 10px rgba(0,0,0,0.05);
     display: flex;
+    margin: 0 5px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: #000;
     border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    background: #fff;
   }
+
+  .socialicons .icon img {
+    width: 70%;
+  }
+
 }

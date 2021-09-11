@@ -17,7 +17,7 @@ import Skill from '../components/Skill';
 
 const Home = () => {
   return (
-    <>
+    <main>
       <section className="section-home">
         <h1>Olá 👋🏻</h1>
         <h1>Meu nome é Alberto.</h1>
@@ -34,7 +34,7 @@ const Home = () => {
       </section>
       <section className="skills-section">
         <h2>
-          <span className="c-tertiary">Skil</span>ls
+          <span className="c-tertiary">Hard </span>Skills
         </h2>
         <div className="skills-list">
           <Skill text="HTML" img={html} />
@@ -49,11 +49,11 @@ const Home = () => {
           <Skill text="Git" img={git} />
         </div>
       </section>
-      <footer className="footer-home p-2 fs-3 link-shadow">
+      <footer className="footer-home fs-3 link-shadow">
         <h3>Quer trabalhar junto ou tem alguma dúvida?</h3>
-        <Link to="/contact" className="c-tertiary">Diga Oi 👋🏻</Link>
+        <Link to="/contact" className="c-tertiary">DIGA OI 👋🏻</Link>
       </footer>
-    </>
+    </main>
   )
 }
 

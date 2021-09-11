@@ -260,6 +260,15 @@ h2, .h2 {
   }
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  align-self: center;
+}
+
 .link-shadow {
   margin: 5px;
   padding: 20px 5px;

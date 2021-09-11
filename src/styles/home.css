@@ -36,6 +36,10 @@
   max-width: 600px;
 }
 
+.about-text h2 {
+  align-self: center;
+}
+
 .skills-section {
   margin: 100px 5px;
   min-height: 60vh;
@@ -78,5 +82,14 @@
   margin: 40px 20px;
   padding: 20px;
   font-size: 1.2rem;
-  gap: 2rem;
+  gap: 1.5rem;
+  max-width: 600px;
+}
+
+.footer-home h3 {
+  font-weight: 400;
+}
+
+.footer-home a {
+  font-size: 1.7rem;
 }

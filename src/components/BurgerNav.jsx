@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import RightNav from './RightNav';
+import { useLocation } from 'react-router-dom';
 
 const StyledDiv = styled.div`
   width: 2rem;
@@ -40,7 +41,23 @@ const StyledDiv = styled.div`
 `;
 
 const BurgerNav = () => {
+  const url = useLocation().pathname;
   const [open, setOpen] = useState(false);
+
+  React.useEffect(() => {
+    if(open) {
+      if(window.innerWidth < 768) {
+        document.body.style.overflow = 'hidden';
+        if(url.includes('contact')) {
+          window.scroll(0, 0);
+        }
+      }
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [open, url]);
+  
+
 
   return (
     <>

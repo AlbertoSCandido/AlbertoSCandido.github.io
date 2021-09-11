@@ -60,7 +60,7 @@ const Contact = () => {
   return (
     <main className="main-contact">
       <form onSubmit={onSubmit} className="form-contact">
-        <h1 className="title-contact">Entre em contato</h1>
+        <h1 className="title-contact"><span className="c-tertiary">Entre em</span> contato</h1>
         <input
           type="text"
           name="from_name"
@@ -91,11 +91,66 @@ const Contact = () => {
       {/* animação de redes sociais usando base https://code-architects.github.io/social-media-icons/ */}
       <div class="wrapper">
           <div class="socialicons">
-              <a href="https://github.com/albertoscandido" title="GitHub" class="icon"><img src={ gitHub } alt="GitHub" /></a>
-              <a href="https://www.linkedin.com/in/albertocandido/" title="LinkedIn" class="icon"><img src={ linkedIn } alt="LinkedIn" /></a>
-              <a href="https://www.instagram.com/albertocandido98/" title="Instagram" class="icon"><img src={ instagram } alt="Instagram" /></a>
-              <a href="https://twitter.com/albertocas98" title="Twitter" class="icon"><img src={ twitter } alt="twitter"/></a>
-              <a href="https://open.spotify.com/user/tkfegmfvpa0d6wh8k8br4o8vv?si=7c6307506d854d71" title="Spotify" class="icon"><img src={ spotify } alt="spotify"/></a>
+              <a 
+                href="https://github.com/albertoscandido"
+                target="_blank"
+                rel="noreferrer"
+                title="GitHub"
+                class="icon"
+              >
+                <img
+                  src={ gitHub }
+                  alt="GitHub" 
+                />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/albertocandido/"
+                target="_blank"
+                rel="noreferrer"
+                title="LinkedIn"
+                class="icon"
+              >
+                <img
+                  src={ linkedIn }
+                  alt="LinkedIn"
+                />
+              </a>
+              <a 
+                href="https://www.instagram.com/albertocandido98/"
+                target="_blank"
+                rel="noreferrer"
+                title="Instagram"
+                class="icon"
+              >
+                <img
+                  src={ instagram }
+                  alt="Instagram"
+                />
+              </a>
+              <a 
+                href="https://twitter.com/albertocas98"
+                target="_blank"
+                rel="noreferrer"
+                title="Twitter"
+                class="icon"
+              >
+                <img
+                  src={ twitter }
+                  alt="twitter"
+                />
+              </a>
+              <a 
+                href="https://open.spotify.com/user/tkfegmfvpa0d6wh8k8br4o8vv?si=7c6307506d854d71"
+                target="_blank"
+                rel="noreferrer"
+                title="Spotify"
+                class="icon"
+              >
+                <img
+                  src={ spotify }
+                  alt="spotify"
+                />
+              </a>
           </div>
       </div>
     </main>

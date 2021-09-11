@@ -1,6 +1,5 @@
 {
-  "name": "portfolio",
-  "homepage": "https://albertoscandido.github.io/portfolio",
+  "homepage": "https://albertoscandido.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
