@@ -19,6 +19,7 @@
 
 #perfil-img {
   width: 60%;
+  pointer-events: none;
   max-width: 250px;
   border-radius: 50%;
 }
