@@ -27,9 +27,9 @@ const Projects = () => {
         </div>
         { stack === 'front-end' ? <FrontEnd /> : <BackEnd /> }
       </section>
-      <footer className="footer-home p-2 fs-3 link-shadow">
-        <h3>Quer trabalhar junto ou tem alguma dúvida?</h3>
-        <Link to="/contact" className="c-tertiary">DIGA OI 👋🏻</Link>
+      <footer className="footer-home fs-3 link-shadow">
+        <h3>Quer saber um pouco mais dos projetos ou sobre mim?</h3>
+        <Link to="/contact" className="c-tertiary">Vamos conversar! 👋🏻</Link>
       </footer>
     </main>
   )

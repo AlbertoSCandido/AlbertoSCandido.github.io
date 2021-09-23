@@ -5,6 +5,7 @@ import gitHub from '../img/gitHub.svg';
 import linkedIn from '../img/linkedIn.svg';
 import twitter from '../img/twitter.svg';
 import spotify from '../img/spotify.svg';
+import whatsapp from '../img/whatsapp.svg';
 import { send, init } from 'emailjs-com';
 
 init('user_mdrJJlYqofmzWIFqxmIws');
@@ -148,6 +149,18 @@ const Contact = () => {
                 <img
                   src={ spotify }
                   alt="spotify"
+                />
+              </a>
+              <a 
+                href="https://wa.me/+5534984408883"
+                target="_blank"
+                rel="noreferrer"
+                title="WhatsApp"
+                class="icon"
+              >
+                <img
+                  src={ whatsapp }
+                  alt="whatsapp"
                 />
               </a>
           </div>
