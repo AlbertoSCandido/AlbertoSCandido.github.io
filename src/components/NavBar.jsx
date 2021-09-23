@@ -35,7 +35,7 @@ const NavBar = () => {
     <header id="header">
       <Nav>
         <div className="logo">
-          {'<'}{logo}{' />'}
+          {'<'}{ logo }{' />'}
         </div>
         <BurgerNav />
       </Nav>

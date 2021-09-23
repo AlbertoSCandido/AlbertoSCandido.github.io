@@ -16,6 +16,7 @@ import Skill from '../components/Skill';
 import alberto from '../img/alberto.png';
 
 const Home = () => {
+  console.log(window.innerWidth);
   return (
     <main>
       <section className="section-home">
@@ -31,8 +32,10 @@ const Home = () => {
         <div className="about-text">
           <h2><span className="c-tertiary">Sobre</span> mim</h2>
           <p>Tenho 23 anos e moro atualmente em Araguari-MG. Sou apaixonado por solucionar problemas usando lógica.
-            Sou um estudante de desenvolvimento de software e nas horas vagas meus hobbies são: músicas, séries, filmes e trilhas.
+            Sou um estudante de desenvolvimento de software e nas horas vagas você pode me encontrar ouvindo músicas, assistindo séries ou filmes, e fazendo trilhas.
           </p>
+          <br />
+          <Link to="/projects" className="c-tertiary">Conheça meus projetos {'>'}</Link>
         </div>
       </section>
       <section className="skills-section">
@@ -49,7 +52,7 @@ const Home = () => {
           <Skill text="Node" img={node} />
           <Skill text="MongoDB" img={mongodb} />
           <Skill text="MySQL" img={mysql} />
-          <Skill text="Git" img={git} />
+          <Skill text="Git/GitHub" img={git} />
         </div>
       </section>
       <footer className="footer-home fs-3 link-shadow">

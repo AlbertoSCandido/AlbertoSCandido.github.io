@@ -8,21 +8,26 @@
 }
 
 .section-home h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 300;
+}
+
+.section-home div {
+  max-width: 800px;
 }
 
 .perfil-img {
   width: 60%;
   pointer-events: none;
+  user-select: none;
   max-width: 300px;
   border-radius: 50%;
 }
 
 .about-section {
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-  background-color: rgb(48, 47, 47);
-  z-index: -1;
+  background-color: rgb(39, 36, 36);
+  /* z-index: -1; */
   padding: 150px 20px;
   margin: 150px 5px;
   min-height: 40vh;
@@ -74,6 +79,7 @@
   flex-flow: row wrap;
   gap: 1rem;
   justify-content: center;
+
 }
 
 .footer-home {
@@ -103,5 +109,11 @@
   
   .section-home {
     flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 1600px) {
+  .skills-list {
+    max-width: 800px;
   }
 }

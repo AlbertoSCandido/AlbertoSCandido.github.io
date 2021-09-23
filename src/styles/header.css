@@ -6,6 +6,8 @@
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   box-shadow: 5px 0px 20px #0e1212;
+  user-select: none;
+  z-index: 2;
 }
 
 #ul-header li a {
