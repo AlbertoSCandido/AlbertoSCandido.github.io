@@ -13,23 +13,29 @@ import mongodb from '../img/mongodb.png';
 import mysql from '../img/mysql.png';
 import git from '../img/git.png';
 import Skill from '../components/Skill';
-
+import alberto from '../img/alberto.png';
 
 const Home = () => {
+  console.log(window.innerWidth);
   return (
     <main>
       <section className="section-home">
-        <h1>Olá 👋🏻</h1>
-        <h1>Meu nome é Alberto.</h1>
-        <h1>Eu sou um estudante de desenvolvimento de software.</h1>
+        <div className="d-flex f-d-column" >
+          <h1>Olá 👋🏻</h1>
+          <h1>Meu nome é <span className="c-tertiary fw-1" >Alberto</span>.</h1>
+          <h1>Eu sou um estudante de desenvolvimento de software.</h1>
+        </div>
+        <img src={ alberto } alt="avatar-alberto" className="perfil-img" />
       </section>
       <section className="d-flex f-wrap j-c-spAround gap-3 p-2 about-section">
-        <img src={perfil} alt="Perfil" id="perfil-img" />
+        <img src={ perfil } alt="Perfil" className="perfil-img" />
         <div className="about-text">
           <h2><span className="c-tertiary">Sobre</span> mim</h2>
           <p>Tenho 23 anos e moro atualmente em Araguari-MG. Sou apaixonado por solucionar problemas usando lógica.
-            Sou um estudante de desenvolvimento de software e nas horas vagas meus hobbies são: músicas, séries, filmes e trilhas.
+            Sou um estudante de desenvolvimento de software e nas horas vagas você pode me encontrar ouvindo músicas, assistindo séries ou filmes, e fazendo trilhas.
           </p>
+          <br />
+          <Link to="/projects" className="c-tertiary">Conheça meus projetos {'>'}</Link>
         </div>
       </section>
       <section className="skills-section">
@@ -46,12 +52,12 @@ const Home = () => {
           <Skill text="Node" img={node} />
           <Skill text="MongoDB" img={mongodb} />
           <Skill text="MySQL" img={mysql} />
-          <Skill text="Git" img={git} />
+          <Skill text="Git/GitHub" img={git} />
         </div>
       </section>
       <footer className="footer-home fs-3 link-shadow">
-        <h3>Quer trabalhar junto ou tem alguma dúvida?</h3>
-        <Link to="/contact" className="c-tertiary">DIGA OI 👋🏻</Link>
+        <h3>Quer saber um pouco mais dos projetos ou sobre mim?</h3>
+        <Link to="/contact" className="c-tertiary">Vamos conversar! 👋🏻</Link>
       </footer>
     </main>
   )

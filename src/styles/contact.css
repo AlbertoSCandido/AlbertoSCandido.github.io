@@ -1,6 +1,6 @@
 .main-contact {
   margin-top: 60px;
-  min-height: 80vh;
+  min-height: 84vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -110,7 +110,7 @@
     height: 40px;
     box-shadow: 0 0 5px 10px rgba(0,0,0,0.05);
     display: flex;
-    margin: 0 5px;
+    margin: 0 3px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
