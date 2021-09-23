@@ -12,8 +12,7 @@ body {
   font-size: 1.2rem;
   background: #0e1212;
   color: white;
-  padding-top: 150px;
-  
+  padding-top: 100px;
 }
 
 .d-flex {
@@ -177,6 +176,10 @@ body {
 
 .d-block {
   display: block;
+}
+
+.fw-1 {
+  font-weight: 500;
 }
 
 .fs-1 {

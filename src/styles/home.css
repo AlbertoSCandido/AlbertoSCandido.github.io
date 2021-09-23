@@ -1,9 +1,10 @@
 .section-home {
   padding: 20px;
-  min-height: 90vh;
+  min-height: 75vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 4rem;
 }
 
 .section-home h1 {
@@ -15,19 +16,27 @@
   .section-home h1 {
     font-size: 2rem;
   }
+  .section-home {
+    flex-direction: column-reverse;
+  }
 }
 
-#perfil-img {
+.perfil-img {
   width: 60%;
   pointer-events: none;
-  max-width: 250px;
+  max-width: 300px;
   border-radius: 50%;
 }
 
 .about-section {
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  background-color: rgb(48, 47, 47);
+  z-index: -1;
+  padding: 150px 20px;
   margin: 150px 5px;
   min-height: 40vh;
   align-items: flex-start;
+  gap: 4rem;
 }
 
 .about-text {
@@ -84,7 +93,7 @@
   padding: 20px;
   font-size: 1.2rem;
   gap: 1.5rem;
-  max-width: 600px;
+  max-width: 650px;
 }
 
 .footer-home h3 {
