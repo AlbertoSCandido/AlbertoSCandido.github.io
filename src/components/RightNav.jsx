@@ -33,9 +33,9 @@ const RightNav = ({open, setOpen}) => {
 
   return (
     <Ul open={ open } id="ul-header">
-      <li><Link to="/" onClick={ () => handleClickBurguerLinks() }>Home</Link></li>
-      <li><Link to="/projects" onClick={ () => handleClickBurguerLinks() }>Projetos</Link></li>
-      <li><Link to="/contact" onClick={ () => handleClickBurguerLinks() }>Contato</Link></li>
+      <li><Link to="/" className="underline-hover" onClick={ () => handleClickBurguerLinks() }>Home</Link></li>
+      <li><Link to="/projects" className="underline-hover" onClick={ () => handleClickBurguerLinks() }>Projetos</Link></li>
+      <li><Link to="/contact" className="underline-hover" onClick={ () => handleClickBurguerLinks() }>Contato</Link></li>
       <li className="d-flex g-1">
         <a href="https://www.linkedin.com/in/albertocandido/" target="_blank" rel="noreferrer">
           <svg

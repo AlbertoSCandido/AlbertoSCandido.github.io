@@ -22,6 +22,32 @@
   fill: white;
 }
 
+.underline-hover {
+  display: inline-block;
+  position: relative;
+}
+#ul-header li a:hover {
+  opacity: 1;
+}
+
+.underline-hover:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #9A03FC;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.underline-hover:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
 @media screen and (min-width: 768px) {
   #header {
     width: 80%;

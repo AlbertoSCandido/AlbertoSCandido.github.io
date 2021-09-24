@@ -16,7 +16,6 @@ import Skill from '../components/Skill';
 import alberto from '../img/alberto.png';
 
 const Home = () => {
-  console.log(window.innerWidth);
   return (
     <main>
       <section className="section-home">
