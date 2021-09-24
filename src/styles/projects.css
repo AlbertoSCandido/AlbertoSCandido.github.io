@@ -2,6 +2,9 @@
   width: 100%;
   margin: 0 auto;
   min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .project-card {
@@ -49,10 +52,26 @@
   color: #fff;
 }
 
+.buttons-tasks {
+  width: 80%;
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+.buttons-tasks button {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 
 @media screen and (max-width: 768px) {
   #projects {
     width: 95%;
+    gap: 0;
+  }
+
+  .buttons-tasks button {
+    font-size: 1rem;
   }
 
   .project-card {

@@ -9,16 +9,16 @@ const Projects = () => {
   return (
     <main>
       <section id="projects">
-        <div className="d-flex w-100 j-c-stretch">
+        <div className="d-flex w-100 j-c-stretch buttons-tasks">
           <button
-            className={`grow-1 btn-icon c-tertiary fs-3 link-shadow ${stack === 'front-end' ? 'stack-selected' : '' }`}
+            className={`grow-1 btn-icon c-tertiary link-shadow ${stack === 'front-end' ? 'stack-selected' : '' }`}
             type="button"
             onClick={ () => setStack('front-end') }
           >
             Front-end
           </button>
           <button
-            className={`grow-1 btn-icon c-tertiary fs-3 link-shadow ${stack === 'back-end' ? 'stack-selected' : ''} `}
+            className={`grow-1 btn-icon c-tertiary link-shadow ${stack === 'back-end' ? 'stack-selected' : ''} `}
             type="button"
             onClick={ () => setStack('back-end') }
           >
