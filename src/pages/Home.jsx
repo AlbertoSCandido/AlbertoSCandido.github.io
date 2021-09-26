@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import '../styles/home.css';
 import perfil from '../img/perfil-logo.jpeg';
 import bootstrap from '../img/bootstrap.png';
@@ -16,6 +16,12 @@ import Skill from '../components/Skill';
 import alberto from '../img/alberto.png';
 
 const Home = () => {
+  const history = useHistory();
+
+  function sendToPageContact() {
+    history.push('/contact');
+  }
+
   return (
     <main>
       <section className="section-home">
@@ -54,9 +60,9 @@ const Home = () => {
           <Skill text="Git/GitHub" img={git} />
         </div>
       </section>
-      <footer className="footer-home fs-3 link-shadow">
+      <footer onClick={ sendToPageContact } className="footer-home fs-3 link-shadow">
         <h3>Quer saber um pouco mais dos projetos ou sobre mim?</h3>
-        <Link to="/contact" className="c-tertiary">Vamos conversar! 👋🏻</Link>
+        <p className="c-tertiary">Vamos conversar! 👋🏻</p>
       </footer>
     </main>
   )
