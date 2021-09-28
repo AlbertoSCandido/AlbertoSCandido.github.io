@@ -2,7 +2,6 @@ import React from 'react';
 import { useHistory, Link } from 'react-router-dom';
 import '../styles/home.css';
 import perfil from '../img/perfil-logo.jpeg';
-import bootstrap from '../img/bootstrap.png';
 import css from '../img/css.png';
 import html from '../img/html.png';
 import js from '../img/js.png';
@@ -14,6 +13,7 @@ import mysql from '../img/mysql.png';
 import git from '../img/git.png';
 import Skill from '../components/Skill';
 import alberto from '../img/alberto.png';
+import jest from '../img/jest.png';
 
 const Home = () => {
   const history = useHistory();
@@ -36,8 +36,10 @@ const Home = () => {
         <img src={ perfil } alt="Perfil" className="perfil-img" />
         <div className="about-text">
           <h2><span className="c-tertiary">Sobre</span> mim</h2>
-          <p>Tenho 23 anos e moro atualmente em Araguari-MG. Sou apaixonado por solucionar problemas usando lógica.
-            Sou um estudante de desenvolvimento de software e nas horas vagas você pode me encontrar ouvindo músicas, assistindo séries ou filmes, e fazendo trilhas.
+          <p>
+            Tenho 23 anos e moro em Araguari-MG. Sou apaixonado por aprender e solucionar problemas usando lógica.
+            Sou um estudante de desenvolvimento de software e nas horas vagas você pode me encontrar ouvindo músicas, assistindo séries ou filmes e fazendo trilhas.
+            Meu objetivo atual é encontrar a oportunidade certa de trabalhar em um ambiente que me ajudará a progredir como desenvolvedor.
           </p>
           <br />
           <Link to="/projects" className="c-tertiary">Conheça meus projetos {'>'}</Link>
@@ -50,7 +52,7 @@ const Home = () => {
         <div className="skills-list">
           <Skill text="HTML" img={html} />
           <Skill text="CSS" img={css} />
-          <Skill text="Bootstrap" img={bootstrap} />
+          <Skill text="Jest" img={jest} />
           <Skill text="JavaScript" img={js} />
           <Skill text="React" img={react} />
           <Skill text="Redux" img={redux} />
