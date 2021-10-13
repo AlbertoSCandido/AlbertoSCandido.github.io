@@ -14,6 +14,8 @@ import git from '../img/git.png';
 import Skill from '../components/Skill';
 import alberto from '../img/alberto.png';
 import jest from '../img/jest.png';
+import ts from '../img/typescript.png';
+import sass from '../img/sass.png';
 
 const Home = () => {
   const history = useHistory();
@@ -52,8 +54,10 @@ const Home = () => {
         <div className="skills-list">
           <Skill text="HTML" img={html} />
           <Skill text="CSS" img={css} />
-          <Skill text="Jest" img={jest} />
+          <Skill text="SASS" img={sass} />
           <Skill text="JavaScript" img={js} />
+          <Skill text="TypeScript" img={ts} />
+          <Skill text="Jest" img={jest} />
           <Skill text="React" img={react} />
           <Skill text="Redux" img={redux} />
           <Skill text="Node" img={node} />
