@@ -48,7 +48,6 @@ const Home = () => {
         <div className="skills-list">
           <Skill text="HTML" img={html} />
           <Skill text="CSS" img={css} />
-          <Skill text="Bootstrap" img={bootstrap} />
           <Skill text="JavaScript" img={js} />
           <Skill text="React" img={react} />
           <Skill text="Redux" img={redux} />
