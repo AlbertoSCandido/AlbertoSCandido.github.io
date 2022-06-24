@@ -23,7 +23,7 @@ const Home = () => {
         <div className="d-flex f-d-column" >
           <h1>Olá 👋🏻</h1>
           <h1>Meu nome é <span className="c-tertiary fw-1" >Alberto</span>.</h1>
-          <h1>Eu sou um estudante de desenvolvimento de software.</h1>
+          <h1>Eu sou um desenvolvedor de software no Itaú Unibanco.</h1>
         </div>
         <img src={ alberto } alt="avatar-alberto" className="perfil-img" />
       </section>
@@ -31,8 +31,11 @@ const Home = () => {
         <img src={ perfil } alt="Perfil" className="perfil-img" />
         <div className="about-text">
           <h2><span className="c-tertiary">Sobre</span> mim</h2>
-          <p>Tenho 23 anos e moro atualmente em Araguari-MG. Sou apaixonado por solucionar problemas usando lógica.
-            Sou um estudante de desenvolvimento de software e nas horas vagas você pode me encontrar ouvindo músicas, assistindo séries ou filmes, e fazendo trilhas.
+          <p>Tenho 24 anos, moro em Araguari-MG e sou apaixonado por solucionar problemas usando lógica.
+            Atualmente trabalho com desenvolvimento de software no Itaú e nas horas vagas você pode me encontrar ouvindo músicas, assistindo séries ou filmes e fazendo trilhas.
+          </p>
+          <p>
+            Abaixo você irá encontrar algumas das ferramentas/linguagens que já tive a oportunidade de estudar ou trabalhar.
           </p>
           <br />
           <Link to="/projects" className="c-tertiary">Conheça meus projetos {'>'}</Link>
